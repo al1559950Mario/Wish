@@ -35,11 +35,11 @@ export const OverviewLatestProducts = (props) => {
             >
               <ListItemAvatar>
                 {
-                  product.image
+                  product.img_link
                     ? (
                       <Box
                         component="img"
-                        src={product.image}
+                        src={product.img_link}
                         sx={{
                           borderRadius: 1,
                           height: 48,
@@ -60,7 +60,49 @@ export const OverviewLatestProducts = (props) => {
                 }
               </ListItemAvatar>
               <ListItemText
-                primary={product.name}
+                primary={product.title}
+                primaryTypographyProps={{ variant: 'subtitle1' }}
+                secondary={`Updated ${ago} ago`}
+                secondaryTypographyProps={{ variant: 'body2' }}
+              />
+              <ListItemText
+                primary={product.reviews}
+                primaryTypographyProps={{ variant: 'subtitle1' }}
+                secondary={`Updated ${ago} ago`}
+                secondaryTypographyProps={{ variant: 'body2' }}
+              />
+              <ListItemText
+                primary={product.price}
+                primaryTypographyProps={{ variant: 'subtitle1' }}
+                secondary={`Updated ${ago} ago`}
+                secondaryTypographyProps={{ variant: 'body2' }}
+              />
+              <ListItemText
+                primary={product.score}
+                primaryTypographyProps={{ variant: 'subtitle1' }}
+                secondary={`Updated ${ago} ago`}
+                secondaryTypographyProps={{ variant: 'body2' }}
+              />
+              <ListItemText
+                primary={product.best_seller}
+                primaryTypographyProps={{ variant: 'subtitle1' }}
+                secondary={`Updated ${ago} ago`}
+                secondaryTypographyProps={{ variant: 'body2' }}
+              />
+              <ListItemText
+                primary={product.Shipping}
+                primaryTypographyProps={{ variant: 'subtitle1' }}
+                secondary={`Updated ${ago} ago`}
+                secondaryTypographyProps={{ variant: 'body2' }}
+              />
+              <ListItemText
+                primary={product.quantity_value}
+                primaryTypographyProps={{ variant: 'subtitle1' }}
+                secondary={`Updated ${ago} ago`}
+                secondaryTypographyProps={{ variant: 'body2' }}
+              />
+              <ListItemText
+                primary={product.url}
                 primaryTypographyProps={{ variant: 'subtitle1' }}
                 secondary={`Updated ${ago} ago`}
                 secondaryTypographyProps={{ variant: 'body2' }}

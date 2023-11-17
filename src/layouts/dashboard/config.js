@@ -10,30 +10,22 @@ import { SvgIcon } from '@mui/material';
 
 export const items = [
   {
-    title: 'Overview',
+    title: 'Recomendaciones',
     path: '/',
     icon: (
       <SvgIcon fontSize="small">
+      
         <ChartBarIcon />
       </SvgIcon>
     )
   },
   {
-    title: 'Customers',
-    path: '/customers',
+    title: 'Mi lista de deseos',
+    path: '/mywish',
     icon: (
-      <SvgIcon fontSize="small">
-        <UsersIcon />
-      </SvgIcon>
-    )
-  },
-  {
-    title: 'Companies',
-    path: '/companies',
-    icon: (
-      <SvgIcon fontSize="small">
-        <ShoppingBagIcon />
-      </SvgIcon>
+      <span className="material-symbols-outlined">
+      heart_plus
+     </span>
     )
   },
   {

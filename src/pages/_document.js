@@ -20,6 +20,10 @@ const Favicon = () => (
       sizes="32x32"
       href="/favicon-32x32.png"
     />
+    <link 
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link
       rel="icon"
       type="image/png"
